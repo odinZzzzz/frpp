@@ -122,7 +122,7 @@ func registerProxyDomainConfigFlags(cmd *cobra.Command, c *v1.DomainConfig) {
 		return
 	}
 	cmd.Flags().StringSliceVarP(&c.CustomDomains, "custom_domain", "d", []string{}, "custom domains")
-	cmd.Flags().StringVarP(&c.SubDomain, "sd", "", "", "sub domain")
+	cmd.Flags().StringVarP(&c.SubDomain, "sd", "", "", "server domain")
 }
 
 func RegisterVisitorFlags(cmd *cobra.Command, c v1.VisitorConfigurer, opts ...RegisterFlagOption) {

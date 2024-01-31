@@ -211,10 +211,10 @@ var _ = ginkgo.Describe("[Feature: HTTP]", func() {
 			}).
 			Ensure()
 
-		// sub.test.example.com match *.example.com
+		// server.test.example.com match *.example.com
 		framework.NewRequestExpect(f).Port(vhostHTTPPort).
 			RequestModify(func(r *request.Request) {
-				r.HTTP().HTTPHost("sub.test.example.com")
+				r.HTTP().HTTPHost("server.test.example.com")
 			}).
 			Ensure()
 	})

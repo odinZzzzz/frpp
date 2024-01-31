@@ -54,7 +54,7 @@ func init() {
 		config.RegisterClientCommonConfigFlags(cmd, &clientCfg)
 		config.RegisterProxyFlags(cmd, c)
 
-		// add sub command for visitor
+		// add server command for visitor
 		if lo.Contains(visitorTypes, v1.VisitorType(typ)) {
 			vc := v1.NewVisitorConfigurerByType(v1.VisitorType(typ))
 			if vc == nil {

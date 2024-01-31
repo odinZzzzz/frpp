@@ -58,7 +58,7 @@ type ServerConfig struct {
 	TCPMuxHTTPConnectPort int `json:"tcpmuxHTTPConnectPort,omitempty"`
 	// If TCPMuxPassthrough is true, frps won't do any update on traffic.
 	TCPMuxPassthrough bool `json:"tcpmuxPassthrough,omitempty"`
-	// SubDomainHost specifies the domain that will be attached to sub-domains
+	// SubDomainHost specifies the domain that will be attached to server-domains
 	// requested by the client when using Vhost proxying. For example, if this
 	// value is set to "frps.com" and the client requested the subdomain
 	// "test", the resulting URL would be "test.frps.com".

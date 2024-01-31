@@ -129,7 +129,7 @@ type ServerCommonConf struct {
 	// debug info) to frpc. By default, this value is true.
 	DetailedErrorsToClient bool `ini:"detailed_errors_to_client" json:"detailed_errors_to_client"`
 
-	// SubDomainHost specifies the domain that will be attached to sub-domains
+	// SubDomainHost specifies the domain that will be attached to server-domains
 	// requested by the client when using Vhost proxying. For example, if this
 	// value is set to "frps.com" and the client requested the subdomain
 	// "test", the resulting URL would be "test.frps.com". By default, this
